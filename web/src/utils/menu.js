@@ -1,3 +1,16 @@
+import {
+  Building,
+  ChartNetwork,
+  CircleCheckBig,
+  DollarSign,
+  HandHelping,
+  HeartHandshake,
+  House,
+  HousePlus,
+  icons,
+  NotebookPen
+} from "lucide-react";
+
 export const Menus = [
   {
     name: "Home"
@@ -17,28 +30,21 @@ export const Menus = [
     ],
     subMenu: [
       {
-        name: "Veteran Housing",
-        desc: "Providing Housing Solutions for Veterans"
-      },
-      {
-        name: "Behavioral Health Housing",
-        desc: "Specialized Housing for Behavioral Health Needs"
-      },
-      { name: "Senior Housing", desc: "Affordable Housing for Seniors" },
-      {
-        name: "Workforce Housing",
-        desc: "Housing Solutions for Workforce Stability"
+        name: "Housing",
+        desc: "Providing Housing Solutions for multiple causes and ",
+        icon: HousePlus
       },
       {
         name: "Investment Opportunities",
-        desc: "Social Impact Real Estate Investments"
+        desc: "Social Impact Real Estate Investments",
+        icon: DollarSign
       },
       {
         name: "Platform as a Service",
-        desc: "Property Management and Housing Matching Services"
+        desc: "Property Management and Housing Matching Services",
+        icon: Building
       }
-    ],
-    gridCols: 3
+    ]
   },
   {
     name: "Housing Solutions",
@@ -49,14 +55,15 @@ export const Menus = [
     subMenu: [
       {
         name: "Matching Nonprofits to Properties",
-        desc: "How We Help Nonprofits Secure Housing"
+        desc: "How We Help Nonprofits Secure Housing",
+        icon: HeartHandshake
       },
       {
         name: "Property Types",
-        desc: "Veteran, Senior, Behavioral Health, and More"
+        desc: "Veteran, Senior, Behavioral Health, and More",
+        icon: House
       }
-    ],
-    gridCols: 2
+    ]
   },
   {
     name: "Investor Network",
@@ -64,14 +71,15 @@ export const Menus = [
     subMenu: [
       {
         name: "Joining the Network",
-        desc: "How to Invest in Housing Solutions"
+        desc: "How to Invest in Housing Solutions",
+        icon: ChartNetwork
       },
       {
         name: "Case Studies",
-        desc: "Success Stories of Social Impact Investments"
+        desc: "Success Stories of Social Impact Investments",
+        icon: NotebookPen
       }
-    ],
-    gridCols: 2
+    ]
   },
   {
     name: "Nonprofit Network",
@@ -79,14 +87,15 @@ export const Menus = [
     subMenu: [
       {
         name: "Registering Nonprofits",
-        desc: "How Nonprofits Can Request Housing"
+        desc: "How Nonprofits Can Request Housing",
+        icon: HandHelping
       },
       {
         name: "Success Stories",
-        desc: "Nonprofits Benefiting from Stable Housing"
+        desc: "Nonprofits Benefiting from Stable Housing",
+        icon: CircleCheckBig
       }
-    ],
-    gridCols: 2
+    ]
   },
   {
     name: "Blog"

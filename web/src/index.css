@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @layer components {
     .sub-menu {
-        @apply absolute top-[4.2rem] p-[15px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-accent-secondary/30 shadow-md
+        @apply absolute top-[4.2rem] p-[15px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-accent-secondary text-background shadow-md
     }
 }
 
