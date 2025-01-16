@@ -1,4 +1,5 @@
 import Hero from "./Hero";
+import Resources from "./Resources";
 import Services from "./Services";
 
 const Home = () => {
@@ -8,6 +9,8 @@ const Home = () => {
       <Hero />
       {/* Services */}
       <Services />
+      {/* Resources */}
+      <Resources />
     </main>
   );
 };

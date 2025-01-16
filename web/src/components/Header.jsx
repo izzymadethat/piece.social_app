@@ -1,4 +1,5 @@
 import { Home } from "lucide-react";
+import { Button, Dropdown } from "rizzui";
 import { Menus } from "../utils/menu";
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
@@ -19,9 +20,35 @@ const Header = () => {
           ))}
         </ul>
         <div className="flex-center gap-x-5">
-          <button className="bg-primary hover:bg-accent-secondary duration-200 text-background z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center">
-            Investor Network Login
-          </button>
+          <Dropdown>
+            <Dropdown.Trigger>
+              <Button
+                as="span"
+                variant="outline"
+                className="bg-primary hover:bg-accent-secondary duration-200 text-background z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center"
+              >
+                Login
+              </Button>
+            </Dropdown.Trigger>
+            <Dropdown.Menu className="bg-background p-6 group/d-item text-sm">
+              <Dropdown.Item className="hover/d-item:bg-rose-700 hover/d-item:text-background rounded-md">
+                Investor Network Login
+              </Dropdown.Item>
+              <Dropdown.Item className="hover/d-item:bg-rose-700 hover/d-item:text-background rounded-md">
+                Nonprofit Network Login
+              </Dropdown.Item>
+              <Dropdown.Item className="hover/d-item:bg-rose-700 hover/d-item:text-background rounded-md">
+                Landlord Network Login
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+
+          <Button
+            variant="outline"
+            className="hover:bg-accent-secondary duration-200 hover:text-background z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center"
+          >
+            Sign up
+          </Button>
         </div>
 
         {/* Mobile Nav */}
