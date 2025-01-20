@@ -1,14 +1,16 @@
+import { SignInButton, SignUpButton } from "@clerk/clerk-react";
 import { motion } from "framer-motion";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Button } from "rizzui/button";
 
 const MobileMenu = ({ Menus }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [clicked, setClicked] = useState(null);
   const toggleMobileMenu = () => {
-    setIsOpen(!isOpen)
-    setClicked(null)
-};
+    setIsOpen(!isOpen);
+    setClicked(null);
+  };
 
   const SubMenuSettings = {
     enter: {
@@ -27,7 +29,7 @@ const MobileMenu = ({ Menus }) => {
       </button>
 
       <motion.div
-        className="fixed left-0 right-0 top-16 overflow-y-auto h-full backdrop-blur text-background bg-accent-secondary p-6 mb-20"
+        className="fixed left-0 right-0 h-full p-6 mb-20 overflow-y-auto top-16 backdrop-blur text-background bg-accent-secondary"
         initial={{ x: "-100%" }}
         animate={{ x: isOpen ? "0%" : "-100%" }}
       >
@@ -38,7 +40,7 @@ const MobileMenu = ({ Menus }) => {
             return (
               <li key={name}>
                 <span
-                  className="flex-center-between p-4 hover:bg-background/5 rounded-md cursor-pointer relative "
+                  className="relative p-4 rounded-md cursor-pointer flex-center-between hover:bg-background/5 "
                   onClick={() => setClicked(isClicked ? null : i)}
                 >
                   {name}
@@ -58,7 +60,7 @@ const MobileMenu = ({ Menus }) => {
                     {subMenu?.map(({ name, icon: Icon }) => (
                       <li
                         key={name}
-                        className="p-2 flex-center hover:bg-white/5 rounded-md cursor-pointer gap-x-2"
+                        className="p-2 rounded-md cursor-pointer flex-center hover:bg-white/5 gap-x-2"
                       >
                         {Icon && <Icon size={17} />}
                         <span>{name}</span>
@@ -70,6 +72,26 @@ const MobileMenu = ({ Menus }) => {
             );
           })}
         </ul>
+        <div className="w-full space-y-2 place-content-end lg:hidden">
+          <SignInButton>
+            <Button
+              as="span"
+              variant="outline"
+              className="bg-primary hover:bg-accent-secondary duration-200 text-background z-[999] relative px-3 py-2 shadow rounded-md flex-center w-full"
+            >
+              Login
+            </Button>
+          </SignInButton>
+
+          <SignUpButton>
+            <Button
+              variant="flat"
+              className=" duration-200 hover:text-background z-[999] relative px-3 py-1.5  rounded-xl flex-center"
+            >
+              Sign up
+            </Button>
+          </SignUpButton>
+        </div>
       </motion.div>
     </div>
   );

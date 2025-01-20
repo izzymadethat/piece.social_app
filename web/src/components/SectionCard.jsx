@@ -1,23 +1,23 @@
 const SectionCard = ({ info }) => {
   return (
-    <a href="#" className="group relative block bg-black">
+    <a href="#" className="relative block bg-black group">
       <img
         alt=""
         src={info?.imageUrl}
-        className="absolute inset-0 h-full w-full object-cover opacity-50 transition-opacity group-hover:opacity-30"
+        className="absolute inset-0 object-cover w-full h-full transition-opacity opacity-50 group-hover:opacity-30"
       />
 
       <div className="relative p-4 sm:p-6 lg:p-8">
-        <p className="text-sm font-medium uppercase tracking-widest text-rose-700">
+        <p className="text-sm font-medium tracking-widest uppercase text-rose-400">
           View Solutions for
         </p>
 
-        <p className="text-xl font-bold text-white sm:text-2xl">
+        <p className="text-xl font-bold text-white font-heading sm:text-3xl">
           {info?.target}
         </p>
 
         <div className="mt-32 sm:mt-48 lg:mt-64">
-          <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+          <div className="transition-all transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
             <p className="text-sm text-white">{info.summary}</p>
           </div>
         </div>

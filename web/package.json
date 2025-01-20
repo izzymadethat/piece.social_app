@@ -13,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@clerk/clerk-react": "^5.22.2",
     "framer-motion": "^11.18.0",
     "lucide-react": "^0.471.1",
     "react": "^18.3.1",
