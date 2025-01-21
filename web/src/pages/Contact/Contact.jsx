@@ -43,7 +43,7 @@ const Contact = () => {
       <div className="container flex items-center justify-center max-w-5xl min-h-screen mx-auto">
         <div className="grid grid-cols-1 align-middle border rounded-xl lg:grid-cols-2">
           {/* Information */}
-          <div className="rounded-bl-xl rounded-tl-xl bg-primary text-background">
+          <div className="rounded-bl-xl rounded-tl-xl bg-accent-secondary text-background">
             <div className="p-10 space-y-4">
               <h2 className="text-4xl">Contact Us</h2>
               <p className="text-lg">

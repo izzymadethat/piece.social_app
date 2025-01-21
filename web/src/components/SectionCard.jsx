@@ -8,7 +8,7 @@ const SectionCard = ({ info }) => {
       />
 
       <div className="relative p-4 sm:p-6 lg:p-8">
-        <p className="text-sm font-medium tracking-widest uppercase text-rose-400">
+        <p className="text-sm font-medium tracking-widest uppercase text-accent-primary">
           View Solutions for
         </p>
 

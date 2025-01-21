@@ -7,11 +7,11 @@ import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   return (
-    <header className="h-16 text-[15px] flex-center sticky inset-0 bg-accent-secondary/20 shadow-sm z-40">
+    <header className="h-16 text-[15px] flex-center sticky inset-0 bg-accent-primary shadow-sm z-40">
       <nav className="px-3.5 w-full flex-center-between mx-auto">
-        <div className="flex-center gap-x-2 z-[999] relative">
+        <div className="flex-center gap-x-1 z-[999] relative">
           <Home size={32} />
-          <h3 className="text-lg">Piece.Social</h3>
+          <h3 className="text-xl">Piece</h3>
         </div>
 
         {/* Desktop menu */}

@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="max-w-xl text-center sm:text-left">
           <h1 className="text-3xl font-extrabold sm:text-5xl">
             Nonprofit Housing
-            <strong className="block font-extrabold text-rose-700">
+            <strong className="block font-extrabold text-accent-secondary">
               {" "}
               Management Solutions.{" "}
             </strong>
@@ -21,14 +21,14 @@ const Hero = () => {
           <div className="flex flex-wrap gap-4 mt-8 text-center">
             <a
               href="#"
-              className="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-rose-600 hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+              className="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-accent-secondary hover:bg-green-900 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
             >
               Get Started
             </a>
 
             <a
-              href="#"
-              className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-rose-600 hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+              href="/about"
+              className="block w-full px-12 py-3 text-sm font-medium rounded shadow bg-background text-foreground hover:text-green-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
             >
               About Us
             </a>
