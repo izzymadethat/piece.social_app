@@ -10,7 +10,7 @@ const ContactForm = () => {
           label="First Name"
           placeholder="Enter your first name"
           required
-          className="w-full"
+          className="w-full bg-transparent"
         />
         <Input
           label="Last Name"

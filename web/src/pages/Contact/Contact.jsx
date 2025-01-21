@@ -10,7 +10,7 @@ const ContactDetails = () => {
         <p className="text-sm font-semibold">{contactDetails.title}</p>
       </div>
       {/* Info plus icons */}
-      <div className="text-lg text-foreground">
+      <div className="text-lg text-accent-primary">
         {/* Phone */}
         <div className="flex gap-2">
           <span>
@@ -40,10 +40,10 @@ const ContactDetails = () => {
 const Contact = () => {
   return (
     <div>
-      <div className="container flex items-center justify-center min-h-screen mx-auto ">
-        <div className="grid grid-cols-1 align-middle border lg:grid-cols-2">
+      <div className="container flex items-center justify-center max-w-5xl min-h-screen mx-auto">
+        <div className="grid grid-cols-1 align-middle border rounded-xl lg:grid-cols-2">
           {/* Information */}
-          <div className="bg-accent-secondary text-neutral-200">
+          <div className="rounded-bl-xl rounded-tl-xl bg-primary text-background">
             <div className="p-10 space-y-4">
               <h2 className="text-4xl">Contact Us</h2>
               <p className="text-lg">
@@ -57,7 +57,7 @@ const Contact = () => {
           </div>
 
           {/* Form */}
-          <div className="border">
+          <div>
             <div className="flex flex-col w-full p-8">
               <span className="w-full text-xs text-right text-red-500">
                 All fields required

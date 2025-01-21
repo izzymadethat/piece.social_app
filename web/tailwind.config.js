@@ -15,11 +15,11 @@ export default {
         lg: { min: "925px" }
       },
       colors: {
-        primary: "#262731",
-        "accent-primary": "#994A62",
-        "accent-secondary": "#164D59",
-        foreground: "#F9F9F9",
-        background: "#FFF"
+        primary: "#0D1216",
+        "accent-primary": "#EEE3A9",
+        "accent-secondary": "#1A724A",
+        foreground: "#0B2016",
+        background: "#F3FAF3"
       }
     }
   },
