@@ -25,7 +25,7 @@ const Header = () => {
             <Button
               as="span"
               variant="outline"
-              className="bg-primary hover:bg-accent-secondary duration-200 text-background z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center"
+              className="bg-primary hover:bg-accent-secondary duration-200 text-background z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center cursor-pointer"
             >
               Login
             </Button>

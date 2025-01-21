@@ -6,10 +6,10 @@ const Hero = () => {
       <div className="relative max-w-screen-xl px-4 py-32 mx-auto sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
         <div className="max-w-xl text-center sm:text-left">
           <h1 className="text-3xl font-extrabold sm:text-5xl">
-            Housing Solutions
+            Nonprofit Housing
             <strong className="block font-extrabold text-rose-700">
               {" "}
-              for Veterans.{" "}
+              Management Solutions.{" "}
             </strong>
           </h1>
 
