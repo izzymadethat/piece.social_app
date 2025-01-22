@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
 import Home from "../pages/Home/Home";
+import HowItWorks from "../pages/HowItWorks/HowItWorks";
 import Housing from "../pages/Services/Housing/Housing";
 import Investing from "../pages/Services/Investing/Investing";
 import Platform from "../pages/Services/Platform/Platform";
@@ -36,6 +37,10 @@ export const routes = createBrowserRouter([
             element: <Platform />
           }
         ]
+      },
+      {
+        path: "how-it-works",
+        element: <HowItWorks />
       },
       {
         path: "contact",
