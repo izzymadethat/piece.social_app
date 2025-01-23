@@ -2,6 +2,7 @@ import { SignInButton, SignUpButton } from "@clerk/clerk-react";
 import { motion } from "framer-motion";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "rizzui/button";
 
 const MobileMenu = ({ Menus }) => {
@@ -29,27 +30,35 @@ const MobileMenu = ({ Menus }) => {
       </button>
 
       <motion.div
-        className="fixed left-0 right-0 h-full p-6 mb-20 overflow-y-auto top-16 backdrop-blur text-background bg-accent-secondary"
+        className="fixed left-0 right-0 w-5/6 h-full p-6 mb-20 overflow-y-auto top-16 backdrop-blur text-background bg-accent-secondary"
         initial={{ x: "-100%" }}
         animate={{ x: isOpen ? "0%" : "-100%" }}
       >
         <ul>
-          {Menus?.map(({ name, subMenu }, i) => {
+          {Menus?.map(({ name, subMenu, route }, i) => {
             const hasSubMenu = subMenu?.length > 0;
             const isClicked = clicked === i;
             return (
               <li key={name}>
-                <span
-                  className="relative p-4 rounded-md cursor-pointer flex-center-between hover:bg-background/5 "
-                  onClick={() => setClicked(isClicked ? null : i)}
-                >
-                  {name}
-                  {hasSubMenu && (
+                {hasSubMenu ? (
+                  <span
+                    className="relative p-4 rounded-md cursor-pointer flex-center-between hover:bg-background/5"
+                    onClick={() => setClicked(isClicked ? null : i)}
+                  >
+                    {name}
                     <ChevronDown
                       className={`ml-auto ${isClicked && "rotate-180"}`}
                     />
-                  )}
-                </span>
+                  </span>
+                ) : (
+                  <Link
+                    to={route || "#"}
+                    className="relative p-4 rounded-md flex-center-between hover:bg-background/5"
+                  >
+                    {name}
+                  </Link>
+                )}
+
                 {hasSubMenu && (
                   <motion.ul
                     className="ml-5"
@@ -57,13 +66,15 @@ const MobileMenu = ({ Menus }) => {
                     animate={isClicked ? "enter" : "exit"}
                     variants={SubMenuSettings}
                   >
-                    {subMenu?.map(({ name, icon: Icon }) => (
-                      <li
-                        key={name}
-                        className="p-2 rounded-md cursor-pointer flex-center hover:bg-white/5 gap-x-2"
-                      >
-                        {Icon && <Icon size={17} />}
-                        <span>{name}</span>
+                    {subMenu?.map(({ name, icon: Icon, route }) => (
+                      <li key={name}>
+                        <Link
+                          to={route || "#"}
+                          className="p-2 rounded-md cursor-pointer flex-center hover:bg-white/5 gap-x-2"
+                        >
+                          {Icon && <Icon size={17} />}
+                          <span>{name}</span>
+                        </Link>
                       </li>
                     ))}
                   </motion.ul>

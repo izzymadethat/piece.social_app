@@ -13,13 +13,16 @@ import {
 
 export const Menus = [
   {
-    name: "Home"
+    name: "Home",
+    route: "/"
   },
   {
-    name: "About Us"
+    name: "About Us",
+    route: "/about"
   },
   {
-    name: "How It Works"
+    name: "How It Works",
+    route: "/how-it-works"
   },
   {
     name: "Services",
@@ -32,17 +35,20 @@ export const Menus = [
       {
         name: "Housing",
         desc: "Providing Housing Solutions for multiple causes and ",
-        icon: HousePlus
+        icon: HousePlus,
+        route: "/services/housing"
       },
       {
         name: "Investment Opportunities",
         desc: "Social Impact Real Estate Investments",
-        icon: DollarSign
+        icon: DollarSign,
+        route: "/services/investing"
       },
       {
         name: "Platform as a Service",
         desc: "Property Management and Housing Matching Services",
-        icon: Building
+        icon: Building,
+        route: "/services/platform"
       }
     ]
   },
@@ -56,12 +62,16 @@ export const Menus = [
       {
         name: "Matching Nonprofits to Properties",
         desc: "How We Help Nonprofits Secure Housing",
-        icon: HeartHandshake
+        icon: HeartHandshake,
+        route: "#",
+        comingSoon: true
       },
       {
         name: "Property Types",
         desc: "Veteran, Senior, Behavioral Health, and More",
-        icon: House
+        icon: House,
+        route: "#",
+        comingSoon: true
       }
     ]
   },
@@ -72,12 +82,16 @@ export const Menus = [
       {
         name: "Joining the Network",
         desc: "How to Invest in Housing Solutions",
-        icon: ChartNetwork
+        icon: ChartNetwork,
+        comingSoon: true,
+        route: "#"
       },
       {
         name: "Case Studies",
         desc: "Success Stories of Social Impact Investments",
-        icon: NotebookPen
+        icon: NotebookPen,
+        comingSoon: true,
+        route: "#"
       }
     ]
   },
@@ -88,20 +102,27 @@ export const Menus = [
       {
         name: "Registering Nonprofits",
         desc: "How Nonprofits Can Request Housing",
-        icon: HandHelping
+        icon: HandHelping,
+        comingSoon: true,
+        route: "#"
       },
       {
         name: "Success Stories",
         desc: "Nonprofits Benefiting from Stable Housing",
-        icon: CircleCheckBig
+        icon: CircleCheckBig,
+        comingSoon: true,
+        route: "#"
       }
     ]
   },
   {
-    name: "Blog"
+    name: "Blog",
+    comingSoon: true,
+    route: "#"
   },
   {
-    name: "Contact"
+    name: "Contact",
+    route: "/contact"
   }
 ];
 

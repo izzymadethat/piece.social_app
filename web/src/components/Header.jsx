@@ -1,5 +1,6 @@
 import { SignInButton, UserButton } from "@clerk/clerk-react";
 import { Home } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button, Dropdown } from "rizzui";
 import { Menus } from "../utils/menu";
 import DesktopMenu from "./DesktopMenu";
@@ -9,10 +10,10 @@ const Header = () => {
   return (
     <header className="h-16 text-[15px] flex-center sticky inset-0 bg-accent-primary shadow-sm z-40">
       <nav className="px-3.5 w-full flex-center-between mx-auto">
-        <div className="flex-center gap-x-1 z-[999] relative">
+        <Link to={"/"} className="flex-center gap-x-1 z-[999] relative">
           <Home size={32} />
           <h3 className="text-xl">Piece</h3>
-        </div>
+        </Link>
 
         {/* Desktop menu */}
         <ul className="hidden lg:flex-center gap-x-1">
