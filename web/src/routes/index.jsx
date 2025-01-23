@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
+import Error404 from "../pages/Error/Error404";
 import Home from "../pages/Home/Home";
 import HowItWorks from "../pages/HowItWorks/HowItWorks";
 import Housing from "../pages/Services/Housing/Housing";
@@ -47,5 +48,9 @@ export const routes = createBrowserRouter([
         element: <Contact />
       }
     ]
+  },
+  {
+    path: "*",
+    element: <Error404 />
   }
 ]);
