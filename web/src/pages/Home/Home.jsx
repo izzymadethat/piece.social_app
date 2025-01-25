@@ -1,7 +1,7 @@
 import Hero from "./Hero";
-import Problem from "./Problem";
 import Resources from "./Resources";
 import Services from "./Services";
+import TheChallenge from "./TheChallenge";
 import WhatIsPieceSocial from "./WhatIsPieceSocial";
 
 const Home = () => {
@@ -11,12 +11,12 @@ const Home = () => {
       <Hero />
       {/* What is Piece Social? */}
       <WhatIsPieceSocial />
-      {/* The Current Problem */}
-      <Problem />
+      {/* The Current Challenge */}
+      <TheChallenge />
       {/* Services */}
       <Services />
       {/* Resources */}
-      <Resources />
+      {/* <Resources /> */}
     </main>
   );
 };
