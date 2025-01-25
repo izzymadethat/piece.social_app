@@ -1,6 +1,6 @@
 const HowItWorks = () => {
   return (
-    <div className="flex flex-col items-center p-8 bg-gray-50">
+    <div className="flex flex-col items-center p-8">
       {/* Hero Section */}
       <header className="mb-12 text-center">
         <h1 className="text-4xl font-bold text-gray-800">How It Works</h1>
@@ -86,7 +86,7 @@ const HowItWorks = () => {
 
       {/* Call to Action */}
       <footer className="mt-16">
-        <button className="px-6 py-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700">
+        <button className="px-6 py-3 text-white rounded-lg bg-accent-secondary ">
           Get Started
         </button>
       </footer>
