@@ -52,9 +52,9 @@ const Stats = () => {
               </span>
             </p>
             <p>
-              Revenue(est.):{" "}
+              Estimated Revenue:{" "}
               <span className="font-bold text-background">
-                {stat.estimatedRevenue.toString().slice(0, 3)},
+                ${stat.estimatedRevenue.toString().slice(0, 3)},
                 {stat.estimatedRevenue.toString().slice(3)}
               </span>
             </p>
