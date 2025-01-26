@@ -92,6 +92,13 @@ export const Menus = [
         icon: ChartNetwork,
         comingSoon: true,
         route: "#"
+      },
+      {
+        name: "Case Studies",
+        desc: "Success Stories of Social Impact Investments",
+        icon: NotebookPen,
+        comingSoon: true,
+        route: "#"
       }
     ]
   },
