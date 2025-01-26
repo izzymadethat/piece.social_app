@@ -77,3 +77,25 @@ export const ourTeam = [
     title: "Development"
   }
 ];
+
+export const waysToHelp = [
+  {
+    title: "Join as an Investor",
+    description: "Fractional Real-Estate Investing",
+    icon: "💸",
+    link: "/services/investing"
+  },
+  {
+    title: "Join the Nonprofit Network",
+    description: "How to Secure Housing Through Piece.Social",
+    icon: "🤝",
+    link: "/volunteer"
+  },
+  {
+    title: "Crowdfunding",
+    description:
+      "Share our mission with your friends and family to help us reach more people.",
+    icon: "📢",
+    link: "/share"
+  }
+];

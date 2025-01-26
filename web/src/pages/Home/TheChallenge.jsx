@@ -1,8 +1,8 @@
-const Problem = () => {
+const TheChallenge = () => {
   return (
-    <section className="p-24">
+    <section className="p-8 lg:p-24">
       <div className="p-4 rounded-md bg-accent-secondary text-background">
-        <h3 className="text-lg">The Problem</h3>
+        <h3 className="text-2xl">The Challenge</h3>
       </div>
       <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
@@ -35,7 +35,7 @@ const Problem = () => {
 
           <div>
             <img
-              src="https://images.unsplash.com/photo-1731690415686-e68f78e2b5bd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://plus.unsplash.com/premium_photo-1694475451278-17f78264b686?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               className="rounded"
               alt=""
             />
@@ -45,4 +45,4 @@ const Problem = () => {
     </section>
   );
 };
-export default Problem;
+export default TheChallenge;

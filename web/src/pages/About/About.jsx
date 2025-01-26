@@ -1,5 +1,6 @@
 import { aboutUsDetails } from "./about-details";
 import Goals from "./Goals";
+import HelpUs from "./HelpUs";
 import Hero from "./Hero";
 import Mission from "./Mission";
 import Team from "./Team";
@@ -13,6 +14,7 @@ const About = () => {
       <Goals />
       {/* <Values /> */}
       <Team />
+      <HelpUs />
     </div>
   );
 };

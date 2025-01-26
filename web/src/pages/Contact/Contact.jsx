@@ -59,9 +59,6 @@ const Contact = () => {
           {/* Form */}
           <div>
             <div className="flex flex-col w-full p-8">
-              <span className="w-full text-xs text-right text-red-500">
-                All fields required
-              </span>
               {/* Contact Form */}
               <ContactForm />
             </div>

@@ -1,4 +1,3 @@
-import ServiceArticle from "../../../components/ServiceArticle";
 import { serviceDetails } from "./service-details";
 
 const Housing = () => {
@@ -6,7 +5,7 @@ const Housing = () => {
     <div className="py-24 bg-white sm:py-32">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="max-w-2xl mx-auto lg:text-center">
-          <h2 className="font-semibold text-accent-secondary text-base/7">
+          <h2 className="font-semibold text-accent-secondary text-xl/7">
             Housing
           </h2>
           <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 text-pretty sm:text-5xl lg:text-balance">
@@ -16,7 +15,7 @@ const Housing = () => {
             We not only help nonprofits with <strong>finding</strong> and
             setting up their <strong>property</strong>, we also facilitate{" "}
             <strong>long-term funding</strong> to continue to provide{" "}
-            <strong>safe</strong> housing for the nonprofit and its guests
+            <strong>safe</strong> housing for the nonprofit and its clients.
           </p>
         </div>
         <div className="max-w-2xl mx-auto mt-16 sm:mt-20 lg:mt-24 lg:max-w-4xl">
