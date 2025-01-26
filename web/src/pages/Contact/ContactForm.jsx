@@ -29,6 +29,7 @@ const ContactForm = () => {
         label="Phone Number"
         type="tel"
         placeholder="Enter your best contact number"
+        required
       />
       <Textarea
         label="Message"

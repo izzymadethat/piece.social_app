@@ -80,16 +80,16 @@ export const Menus = [
     subMenuHeadings: ["Overview", "Case Studies"],
     subMenu: [
       {
-        name: "Joining the Network",
-        desc: "How to Invest in Housing Solutions",
-        icon: ChartNetwork,
+        name: "Case Studies",
+        desc: "Success Stories of Social Impact Investments",
+        icon: NotebookPen,
         comingSoon: true,
         route: "#"
       },
       {
-        name: "Case Studies",
-        desc: "Success Stories of Social Impact Investments",
-        icon: NotebookPen,
+        name: "Joining the Network",
+        desc: "How to Invest in Housing Solutions",
+        icon: ChartNetwork,
         comingSoon: true,
         route: "#"
       }
