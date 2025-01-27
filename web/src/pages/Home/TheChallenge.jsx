@@ -1,12 +1,26 @@
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
 const TheChallenge = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <section className="p-8 lg:p-24">
-      <div className="p-4 rounded-md bg-accent-secondary text-background">
+    <section ref={ref} className="p-8 lg:p-24">
+      <motion.div
+        initial={{ width: "25%", opacity: 0 }}
+        animate={isInView ? { width: "100%", opacity: 1 } : {}}
+        transition={{ duration: 1.5 }}
+        className="p-4 rounded-md bg-accent-secondary text-background"
+      >
         <h3 className="text-2xl">The Challenge</h3>
-      </div>
+      </motion.div>
       <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={isInView ? { y: 0, opacity: 1 } : {}}
+            transition={{ duration: 1, bounce: true }}
+          >
             <div className="max-w-lg md:max-w-none">
               <h2 className="text-xl font-semibold text-gray-900 sm:text-5xl">
                 <span className="underline">Gro</span>up Housing
@@ -31,15 +45,19 @@ const TheChallenge = () => {
                 that <strong>help</strong> others.
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 1.75 }}
+          >
             <img
               src="https://plus.unsplash.com/premium_photo-1694475451278-17f78264b686?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               className="rounded"
               alt=""
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
