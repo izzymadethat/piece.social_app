@@ -10,6 +10,7 @@
     "lint:check": "npx @biomejs/biome lint ./src",
     "format": "npx @biomejs/biome format --write ./src",
     "check": "npx @biomejs/biome check ./src",
+    "check:fix": "npx @biomejs/biome check --write ./src",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

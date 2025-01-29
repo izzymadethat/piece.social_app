@@ -21,7 +21,15 @@
     "rules": {
       "recommended": true,
       "a11y": {
-        "useButtonType": "off"
+        "useButtonType": "off",
+        "useValidAnchor": "warn",
+        "useKeyWithClickEvents": "off"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "off"
+      },
+      "style": {
+        "noUnusedTemplateLiteral": "off"
       }
     }
   },

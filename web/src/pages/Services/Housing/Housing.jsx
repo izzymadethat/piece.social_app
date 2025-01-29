@@ -43,19 +43,3 @@ const Housing = () => {
 	);
 };
 export default Housing;
-
-{
-	/* <div>
-  <div>
-    <h2 className="mt-6 text-3xl text-center md:text-left">
-      Real Estate Solutions for Non-Profits
-    </h2>
-  </div>
-
-  <section>
-    {serviceDetails.map((service, i) => (
-      <ServiceArticle info={service} key={i} />
-    ))}
-  </section>
-</div>; */
-}

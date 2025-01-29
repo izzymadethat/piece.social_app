@@ -14,7 +14,6 @@ const Mission = () => {
 			<div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-3">
 				<div className="text-center">
 					<h3 className="text-4xl font-bold">8 Homes</h3>
-					<p></p>
 				</div>
 			</div>
 		</section>

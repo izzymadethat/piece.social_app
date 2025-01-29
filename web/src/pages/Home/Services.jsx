@@ -1,4 +1,4 @@
-import { motion, MotionConfig, useInView } from "framer-motion";
+import { MotionConfig, motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import SectionCard from "../../components/SectionCard";
 import { targets } from "../../utils/targets";

@@ -11,7 +11,7 @@ const Opportunities = () => {
 			}}
 		>
 			{/* Overlay */}
-			<div className="absolute inset-0 bg-opacity-80 bg-[#C4C5C3] backdrop-blur-sm"></div>
+			<div className="absolute inset-0 bg-opacity-80 bg-[#C4C5C3] backdrop-blur-sm" />
 			<div className="z-30 px-6 mx-auto max-w-7xl lg:px-8">
 				<div className="max-w-2xl mx-auto lg:text-center">
 					<h2 className="font-semibold text-accent-secondary text-xl/7">
