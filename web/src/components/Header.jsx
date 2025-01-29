@@ -1,4 +1,4 @@
-import { SignInButton, UserButton } from "@clerk/clerk-react";
+import { SignInButton, SignUpButton, UserButton } from "@clerk/clerk-react";
 import { Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button, Dropdown } from "rizzui";
@@ -26,18 +26,19 @@ const Header = () => {
             <Button
               as="span"
               variant="outline"
-              className="bg-primary hover:bg-accent-secondary duration-200 text-background z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center cursor-pointer"
+              className="bg-primary hover:bg-accent-secondary hover:text-white border-none duration-200 text-background z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center cursor-pointer"
             >
               Login
             </Button>
           </SignInButton>
-
-          <Button
-            variant="outline"
-            className="hover:bg-accent-secondary duration-200 hover:text-background z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center"
-          >
-            Sign up
-          </Button>
+          <SignUpButton>
+            <Button
+              variant="outline"
+              className="hover:bg-accent-secondary duration-200 hover:text-background z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center border-none"
+            >
+              Create a Piece Account
+            </Button>
+          </SignUpButton>
         </div>
 
         {/* Mobile Nav */}

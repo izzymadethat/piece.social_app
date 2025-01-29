@@ -1,9 +1,22 @@
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
 const WhatIsPieceSocial = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true }); // Trigger view on scroll once
   return (
-    <div className="flex items-center justify-center bg-accent-primary">
+    <div
+      className="flex items-center justify-center bg-accent-primary"
+      ref={ref}
+    >
       <div className="flex flex-col-reverse overflow-hidden shadow-md lg:flex-row">
         {/* Left content */}
-        <div className="p-8 lg:w-2/3 ">
+        <motion.div
+          className="flex flex-col justify-center p-8 lg:w-2/3"
+          initial={{ opacity: 0, y: 100 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1, ease: "easeInOut" }}
+        >
           <div className="mb-6">
             <h2 className="mb-4 text-3xl font-extrabold">
               What is{" "}
@@ -27,16 +40,21 @@ const WhatIsPieceSocial = () => {
               This is where Piece steps in to help...
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Image */}
-        <div className="lg:w-1/3">
+        <motion.div
+          className="lg:w-1/3"
+          initial={{ opacity: 0, x: 50 }}
+          animate={isInView ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 1, ease: "easeInOut" }}
+        >
           <img
             src="https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Housing"
             className="object-cover w-full h-full"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
