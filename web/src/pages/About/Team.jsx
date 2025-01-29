@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ourTeam } from "./about-details";
 const Team = () => {
   return (
-    <section className="flex flex-col justify-center w-full min-h-screen p-24">
+    <section className="flex flex-col justify-center w-full min-h-screen p-20">
       {/* Heading */}
       <div>
         <h2 className="text-4xl">Our Team</h2>
@@ -14,7 +14,7 @@ const Team = () => {
       </div>
 
       {/* Team info */}
-      <div className="grid items-center self-center w-full max-w-4xl grid-cols-1 gap-12 p-8 rounded-lg lg:grid-cols-3">
+      <div className="grid items-center self-center max-w-4xl grid-cols-1 gap-12 p-8 rounded-lg w-fit lg:grid-cols-3">
         {ourTeam.map((person, i) => (
           // Hoverable Image Card
           <motion.div
