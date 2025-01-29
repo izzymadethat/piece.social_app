@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { ourTeam } from "./about-details";
 const Team = () => {
   return (
@@ -15,21 +16,41 @@ const Team = () => {
       {/* Team info */}
       <div className="grid items-center self-center w-full max-w-4xl grid-cols-1 gap-12 p-8 rounded-lg lg:grid-cols-3">
         {ourTeam.map((person, i) => (
-          <div className="flex flex-col items-center gap-2">
+          // Hoverable Image Card
+          <motion.div
+            whileHover="hover"
+            className="relative flex flex-col items-center gap-2 overflow-hidden rounded-md shadow-xl cursor-pointer"
+          >
             {/* Person Image */}
-            <div>
+            <figure className="w-full">
               <img
-                src={`https://placehold.co/300x300?text=${person.name}`}
+                src={person.imgUrl}
                 alt=""
-                className="border-[16px] rounded-full border-accent-secondary"
+                className="w-[300px] object-cover aspect-[1/1] rounded-t-md"
               />
-            </div>
+            </figure>
             {/* Person info and title */}
-            <div className="flex flex-col items-center">
+            <motion.div
+              className="absolute bottom-0 left-0 flex flex-col items-center w-full p-4 text-center shadow-md bg-background"
+              initial={{ y: "100%", opacity: 0 }}
+              variants={{
+                hover: {
+                  y: 0,
+                  opacity: 1,
+                  transition: { duration: 0.4, ease: "easeOut" }
+                },
+                exit: {
+                  y: "100%",
+                  opacity: 0,
+                  transition: { duration: 0.3, ease: "easeIn" }
+                }
+              }}
+            >
               <h3 className="text-xl font-extrabold">{person.name}</h3>
-              <span className="text-lg">{person.title}</span>
-            </div>
-          </div>
+              <h4 className="text-lg font-body">{person.title}</h4>
+              <div className="flex items-center mt-4">Social Media Icons</div>
+            </motion.div>
+          </motion.div>
         ))}
       </div>
     </section>
