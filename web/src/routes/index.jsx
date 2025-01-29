@@ -10,47 +10,47 @@ import Platform from "../pages/Services/Platform/Platform";
 import Layout from "./Layout";
 
 export const routes = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    children: [
-      {
-        index: true,
-        element: <Home />
-      },
-      {
-        path: "about",
-        element: <About />
-      },
-      {
-        path: "services",
-        children: [
-          {
-            path: "housing",
-            element: <Housing />
-          },
-          {
-            path: "investing",
-            element: <Investing />
-          },
-          {
-            path: "platform",
-            element: <Platform />
-          }
-        ]
-      },
-      {
-        path: "how-it-works",
-        element: <HowItWorks />
-      },
-      {
-        path: "contact",
-        element: <Contact />
-      }
-    ]
-  },
-  {
-    path: "*",
-    element: <Error404 />
-  }
+	{
+		path: "/",
+		element: <Layout />,
+		children: [
+			{
+				index: true,
+				element: <Home />,
+			},
+			{
+				path: "about",
+				element: <About />,
+			},
+			{
+				path: "services",
+				children: [
+					{
+						path: "housing",
+						element: <Housing />,
+					},
+					{
+						path: "investing",
+						element: <Investing />,
+					},
+					{
+						path: "platform",
+						element: <Platform />,
+					},
+				],
+			},
+			{
+				path: "how-it-works",
+				element: <HowItWorks />,
+			},
+			{
+				path: "contact",
+				element: <Contact />,
+			},
+		],
+	},
+	{
+		path: "*",
+		element: <Error404 />,
+	},
 ]);
