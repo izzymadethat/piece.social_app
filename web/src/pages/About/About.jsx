@@ -7,16 +7,16 @@ import Team from "./Team";
 import Values from "./Values";
 
 const About = () => {
-  return (
-    <div>
-      <Hero />
-      {/* <Mission /> */}
-      <Goals />
-      {/* <Values /> */}
-      <Team />
-      <HelpUs />
-    </div>
-  );
+	return (
+		<div>
+			<Hero />
+			{/* <Mission /> */}
+			<Goals />
+			{/* <Values /> */}
+			<Team />
+			<HelpUs />
+		</div>
+	);
 };
 export default About;
 
