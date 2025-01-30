@@ -52,6 +52,7 @@ export const Menus = [
       }
     ]
   },
+  //   Archived until pages are created
   // {
   // 	name: "Housing Solutions",
   // 	subMenuHeadings: [
