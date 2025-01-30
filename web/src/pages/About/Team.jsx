@@ -27,7 +27,9 @@ const Team = () => {
 							<img
 								src={person.imgUrl}
 								alt=""
-								className="w-[300px] object-cover aspect-[1/1] rounded-t-md"
+								className={`w-[300px] object-cover aspect-[1/1] rounded-t-md ${
+									person.imgUrl.includes("adrian") && "scale-150 translate-y-14"
+								}`}
 							/>
 						</figure>
 						{/* Person info and title */}
