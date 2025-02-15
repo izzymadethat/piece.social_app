@@ -5,54 +5,46 @@ const WhatIsPieceSocial = () => {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true }); // Trigger view on scroll once
 	return (
-		<div className="flex items-center justify-center bg-secondary" ref={ref}>
-			<div className="flex flex-col-reverse items-center justify-center overflow-hidden lg:mx-32 lg:py-32 lg:gap-48 lg:flex-row">
-				{/* Left content */}
-				<motion.div
-					className="flex flex-col justify-center p-8"
-					initial={{ opacity: 0, y: 100 }}
-					animate={isInView ? { opacity: 1, y: 0 } : {}}
-					transition={{ duration: 1, ease: "easeInOut" }}
-				>
-					<div className="mb-6">
-						<h2 className="mb-4 text-3xl font-extrabold">
-							What is <span className="text-accent-secondary">Piece?</span>
-						</h2>
-					</div>
-					<h2 className="mb-4 text-2xl font-extrabold">
-						Nonprofits Need Housing Help
-					</h2>
-					<p className="text-lg md:max-w-2xl lg:max-w-[300px]">
-						There are <span className="font-bold">thousands</span> of nonprofits
-						that <span className="font-bold">already</span> have the
-						programmatic funding to be able to{" "}
-						<span className="font-bold">provide services</span>, but nonprofits
-						have specific <span className="font-bold">struggles</span> in
-						obtaining mortgages and locating{" "}
-						<span className="font-bold">suitable</span> properties.
-					</p>
-					<div className="gap-4 mt-6 flex-center">
-						<div className="bg-[#1C5C3B] text-white font-bold py-2 px-4 rounded w-full lg:max-w-80 shadow-md pointer-events-none">
-							This is where Piece steps in to help...
-						</div>
-					</div>
-				</motion.div>
+		<section
+			className="relative flex items-center justify-center mx-auto bg-accent-secondary"
+			ref={ref}
+		>
+			<img
+				src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"
+				alt="Modern apartment building"
+				className="w-full h-[400px] object-cover opacity-40 blur-sm"
+			/>
 
-				{/* Right Image */}
-				<motion.div
-					className="lg:w-1/3"
-					initial={{ opacity: 0, x: 50 }}
-					animate={isInView ? { opacity: 1, x: 0 } : {}}
-					transition={{ duration: 1, ease: "easeInOut" }}
-				>
-					<img
-						src="https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-						alt="Housing"
-						className="object-cover w-full h-full"
-					/>
-				</motion.div>
+			<div className="absolute inset-0 bg-gradient-to-r max-w-[680px] mx-auto from-[#bfdbd0]/90 to-[#bfdbd0]/80 px-8 py-12 my-12 rounded-lg">
+				<div className="max-w-[600px]">
+					<h2 className="mb-4 text-4xl font-bold">
+						What is <span className="text-accent-secondary">Piece?</span>
+					</h2>
+
+					<div className="p-8 transition-all duration-300 ease-in-out transform rounded-lg shadow-lg bg-white/90 backdrop-blur-sm hover:shadow-xl hover:-translate-y-1">
+						<h3 className="mb-4 text-xl font-semibold">
+							Nonprofits Need Housing Help
+						</h3>
+
+						<p className="leading-relaxed text-gray-700">
+							There are <span className="font-medium">thousands</span> of
+							nonprofits that <span className="font-medium">already</span> have
+							the programmatic funding to be able to{" "}
+							<span className="font-medium">provide services</span>, but
+							nonprofits have specific{" "}
+							<span className="font-medium">struggles</span> in obtaining
+							mortgages and locating{" "}
+							<span className="font-medium">suitable</span> properties
+							<p className="my-4 text-2xl font-heading">
+								This is where{" "}
+								<span className="font-bold text-accent-secondary">Piece</span>{" "}
+								steps in to help...
+							</p>
+						</p>
+					</div>
+				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 export default WhatIsPieceSocial;
