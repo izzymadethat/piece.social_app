@@ -15,33 +15,39 @@ const WhatIsPieceSocial = () => {
 				className="w-full h-[400px] object-cover opacity-40 blur-sm"
 			/>
 
-			<div className="absolute inset-0 bg-gradient-to-r max-w-[680px] mx-auto from-[#bfdbd0]/90 to-[#bfdbd0]/80 px-8 py-12 my-12 rounded-lg">
+			<div className="absolute inset-0 bg-gradient-to-r max-w-[680px] mx-auto from-[#bfdbd0]/90 to-[#bfdbd0]/80 px-8 py-8 my-4 rounded-lg">
 				<div className="max-w-[600px]">
-					<h2 className="mb-4 text-4xl font-bold">
+					<motion.h2
+						initial={{ opacity: 0, y: -100 }}
+						animate={isInView ? { opacity: 1, y: 0 } : {}}
+						transition={{ duration: 1, ease: "easeInOut" }}
+						className="mb-4 text-4xl font-bold"
+					>
 						What is <span className="text-accent-secondary">Piece?</span>
-					</h2>
+					</motion.h2>
 
-					<div className="p-8 transition-all duration-300 ease-in-out transform rounded-lg shadow-lg bg-white/90 backdrop-blur-sm hover:shadow-xl hover:-translate-y-1">
+					<motion.div
+						initial={{ opacity: 0, y: 100 }}
+						animate={isInView ? { opacity: 1, y: 0 } : {}}
+						transition={{ duration: 1, ease: "easeInOut" }}
+						className="p-8 transition-all duration-300 ease-in-out transform rounded-lg shadow-lg bg-white/90 backdrop-blur-sm hover:shadow-xl hover:-translate-y-1"
+					>
 						<h3 className="mb-4 text-xl font-semibold">
 							Nonprofits Need Housing Help
 						</h3>
 
 						<p className="leading-relaxed text-gray-700">
-							There are <span className="font-medium">thousands</span> of
-							nonprofits that <span className="font-medium">already</span> have
-							the programmatic funding to be able to{" "}
-							<span className="font-medium">provide services</span>, but
-							nonprofits have specific{" "}
-							<span className="font-medium">struggles</span> in obtaining
-							mortgages and locating{" "}
-							<span className="font-medium">suitable</span> properties
+							There are thousands of nonprofits that already have the
+							programmatic funding to be able to provide services, but
+							nonprofits have specific struggles in obtaining mortgages and
+							locating suitable properties
 							<p className="my-4 text-2xl font-heading">
 								This is where{" "}
 								<span className="font-bold text-accent-secondary">Piece</span>{" "}
 								steps in to help...
 							</p>
 						</p>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</section>
