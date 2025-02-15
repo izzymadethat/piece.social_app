@@ -13,7 +13,12 @@ const Hero = () => {
 			<div className="p-4 bg-slate-200">
 				<div className="flex flex-col items-center justify-between px-24 py-16 md:flex-row bg-accent-secondary max-w-[1280px] rounded-lg overflow-hidden shadow-lg mx-auto">
 					{/* Info column */}
-					<motion.div className="space-y-6 md:w-1/2">
+					<motion.div
+						initial={{ opacity: 0, y: -100 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 1.5 }}
+						className="space-y-6 md:w-1/2"
+					>
 						<h1 className="text-5xl font-bold text-background">
 							Innovative{" "}
 							<span className="text-accent-primary">Shared Housing</span>{" "}
@@ -36,7 +41,12 @@ const Hero = () => {
 					</motion.div>
 
 					{/* Services column */}
-					<div className="mt-8 md:w-1/2 md:mt-0 md:ml-4">
+					<motion.div
+						initial={{ opacity: 0, x: "200px" }}
+						animate={{ opacity: 1, x: 0 }}
+						transition={{ duration: 1.5 }}
+						className="mt-8 md:w-1/2 md:mt-0 md:ml-4"
+					>
 						<div className="relative">
 							{/* pulsing dots */}
 							<div className="absolute w-24 h-24 rounded-full -top-4 -left-4 bg-accent-primary opacity-20 animate-pulse" />
@@ -57,7 +67,7 @@ const Hero = () => {
 								</div>
 							</div>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</section>
