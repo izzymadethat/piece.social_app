@@ -7,7 +7,10 @@ const Services = () => {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
 	return (
-		<section ref={ref} className="grid grid-cols-1 px-4 py-16 lg:grid-cols-3">
+		<section
+			ref={ref}
+			className="grid max-w-full grid-cols-1 px-12 py-16 mx-auto lg:grid-cols-3"
+		>
 			<MotionConfig transition={{ duration: 1.3, ease: "backInOut" }}>
 				<motion.div
 					initial={{ opacity: 0 }}

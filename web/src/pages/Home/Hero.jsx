@@ -10,7 +10,7 @@ const heroServices = [
 const Hero = () => {
 	return (
 		<section className="" id="home-hero">
-			<div className="p-4 bg-slate-100">
+			<div className="p-16 bg-slate-100">
 				<div className="flex flex-col items-center justify-between px-24 py-16 md:flex-row bg-accent-secondary max-w-[1280px] rounded-lg overflow-hidden shadow-lg mx-auto">
 					{/* Info column */}
 					<motion.div
