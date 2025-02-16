@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 const ContactDetails = () => {
 	return (
-		<div className="space-y-4 ">
+		<div className="space-y-4">
 			<div>
 				<h3 className="text-xl">{contactDetails.name}</h3>
 				<p className="text-sm font-semibold">{contactDetails.title}</p>
@@ -39,8 +39,8 @@ const ContactDetails = () => {
 
 const Contact = () => {
 	return (
-		<div>
-			<div className="container flex items-center justify-center max-w-5xl min-h-screen mx-auto">
+		<div className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+			<div className="container flex items-center justify-center max-w-5xl mx-auto border">
 				<div className="grid grid-cols-1 align-middle border rounded-xl lg:grid-cols-2">
 					{/* Information */}
 					<div className="rounded-bl-xl rounded-tl-xl bg-accent-secondary text-background">

@@ -4,7 +4,9 @@
 	"workspaces": ["web", "blog"],
 	"scripts": {
 		"prepare": "husky",
-		"format": "biome format --write ."
+		"format": "biome format --write .",
+		"lint": "biome lint --write .",
+		"check": "biome check --write ."
 	},
 	"lint-staged": {
 		"*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
