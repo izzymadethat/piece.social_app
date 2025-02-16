@@ -27,9 +27,6 @@ const Platform = () => {
 								<dd className="mt-2 text-gray-600 text-base/7">
 									{feature.detail}
 								</dd>
-								<Button className="mt-4 lg:w-1/4 lg:self-end" disabled>
-									Coming Soon
-								</Button>
 							</div>
 						))}
 					</dl>
