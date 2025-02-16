@@ -3,7 +3,8 @@
 	"private": "true",
 	"workspaces": ["web", "blog"],
 	"scripts": {
-		"prepare": "husky"
+		"prepare": "husky",
+		"format": "biome format --write ."
 	},
 	"lint-staged": {
 		"*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
