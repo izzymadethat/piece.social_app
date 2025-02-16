@@ -6,18 +6,12 @@ const Platform = () => {
 		<div className="py-24 bg-white sm:py-32">
 			<div className="px-6 mx-auto max-w-7xl lg:px-8">
 				<div className="max-w-2xl mx-auto lg:text-center">
-					<h2 className="font-semibold text-accent-secondary text-xl/7">
-						Our Platform As a Service
-					</h2>
-					<p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 text-pretty sm:text-5xl lg:text-balance">
+					<p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 font-heading sm:text-5xl lg:text-balance">
 						Full-Service Web Portal
 					</p>
 					<p className="mt-6 text-lg/8">
-						Our software will provide a place to <strong>match</strong> up{" "}
-						<strong>nonprofits</strong> needing housing with{" "}
-						<strong>investors</strong> that will pay for acquiring and
-						renovating them to suit the public need with <strong>stable</strong>{" "}
-						occupancy
+						Text goes here to describe the platform the Piece will provide for
+						full housing management solutions.
 					</p>
 				</div>
 				<div className="max-w-2xl mx-auto mt-16 sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -33,9 +27,6 @@ const Platform = () => {
 								<dd className="mt-2 text-gray-600 text-base/7">
 									{feature.detail}
 								</dd>
-								<Button className="mt-4 lg:w-1/4 lg:self-end" disabled>
-									Coming Soon
-								</Button>
 							</div>
 						))}
 					</dl>

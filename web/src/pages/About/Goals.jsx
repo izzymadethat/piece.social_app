@@ -2,8 +2,10 @@ import Timeline from "./Timeline";
 
 const Goals = () => {
 	return (
-		<section className="flex flex-col items-center justify-center p-24">
-			<h2 className="my-8 text-5xl">Our Mission</h2>
+		<section className="flex flex-col items-center justify-center xl:h-[350px] p-16">
+			<h2 className="my-8 text-4xl font-bold text-accent-secondary">
+				Our Mission
+			</h2>
 			{/* <Timeline /> */}
 			<p className="text-lg text-center">
 				It is our goal to help <span className="font-extrabold">1 MILLION</span>{" "}

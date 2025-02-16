@@ -1,52 +1,74 @@
 import { motion } from "framer-motion";
+import { ChartArea, DollarSign, HeartHandshake, Home } from "lucide-react";
+const heroServices = [
+	{ name: "Property Management", icon: Home },
+	{ name: "Investment and Growth", icon: DollarSign },
+	{ name: "Nonprofit Solutions", icon: HeartHandshake },
+	{ name: "Platform As A Service", icon: ChartArea },
+];
+
 const Hero = () => {
 	return (
-		<section className="relative bg-[url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)] bg-cover bg-center bg-no-repeat">
-			<div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 sm:bg-gradient-to-r" />
-
-			<div className="relative max-w-screen-xl px-4 py-32 mx-auto sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-				<motion.div
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ duration: 1.2 }}
-					className="max-w-xl text-center sm:text-left"
-				>
-					<h1 className="text-6xl font-extrabold sm:text-5xl">
-						Shared Housing
-						<strong className="block font-extrabold text-accent-secondary">
+		<section className="" id="home-hero">
+			<div className="p-16 bg-slate-100">
+				<div className="flex flex-col items-center justify-between px-24 py-16 md:flex-row bg-accent-secondary max-w-[1280px] rounded-lg overflow-hidden shadow-lg mx-auto">
+					{/* Info column */}
+					<motion.div
+						initial={{ opacity: 0, y: -100 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 1.5 }}
+						className="space-y-6 md:w-1/2"
+					>
+						<h1 className="text-5xl font-bold text-background">
+							Innovative{" "}
+							<span className="text-accent-primary">Shared Housing</span>{" "}
+							Management Solutions
+						</h1>
+						<p className="text-[#AACBBC]">
 							{" "}
-							Management Solutions.{" "}
-						</strong>
-					</h1>
+							Piece Social provides innovative solutions to transform the way
+							you manage shared housing. Our platform streamlines operations,
+							enhances resident experience, and maximizes property potential.
+						</p>
+						<div className="flex gap-4 pt-4">
+							<button className="px-8 py-3 font-semibold transition-all duration-300 transform rounded-full shadow-lg bg-accent-primary text-accent-secondary hover:scale-105 hover:shadow-xl">
+								View Our Solutions
+							</button>
+							<button className="px-8 py-3 border-2 border-[#AACBBC] text-white rounded-full font-semibold hover:bg-[#AACBBC] hover:text-[#1A734A] transform hover:scale-105 transition-all duration-300">
+								About Us
+							</button>
+						</div>
+					</motion.div>
 
-					{/* <p className="max-w-lg mt-4 sm:text-xl/relaxed">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-            illo tenetur fuga ducimus numquam ea!
-          </p> */}
-
-					<div className="flex flex-wrap gap-4 mt-8 text-center">
-						<motion.a
-							initial={{ opacity: 0, x: "-100px" }}
-							animate={{ opacity: 1, x: 0 }}
-							transition={{ duration: 1 }}
-							whileTap={{ scale: 0.95 }}
-							href="#"
-							className="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-accent-secondary hover:bg-green-900 sm:w-auto focus:outline-none"
-						>
-							Get Started
-						</motion.a>
-
-						<motion.a
-							initial={{ opacity: 0, x: "100px" }}
-							animate={{ opacity: 1, x: 0 }}
-							transition={{ duration: 1 }}
-							href="/about"
-							className="block w-full px-12 py-3 text-sm font-medium rounded shadow bg-background text-foreground hover:text-green-700 active:text-green-800 sm:w-auto"
-						>
-							About Us
-						</motion.a>
-					</div>
-				</motion.div>
+					{/* Services column */}
+					<motion.div
+						initial={{ opacity: 0, x: "200px" }}
+						animate={{ opacity: 1, x: 0 }}
+						transition={{ duration: 1.5 }}
+						className="mt-8 md:w-1/2 md:mt-0 md:ml-4"
+					>
+						<div className="relative">
+							{/* pulsing dots */}
+							<div className="absolute w-24 h-24 rounded-full -top-4 -left-4 bg-accent-primary opacity-20 animate-pulse" />
+							<div className="absolute -bottom-4 -right-4 w-32 h-32 bg-[#AACBBC] rounded-full opacity-20 animate-pulse" />
+							{/* Services grid*/}
+							<div className="relative z-10 p-8 transition-all duration-300 transform bg-white/10 backdrop:blur-sm rounded-2xl hover:scale-105">
+								<div className="grid grid-cols-2 gap-4">
+									{heroServices.map(({ icon: Icon, name }) => (
+										<div key={name} className="p-4 rounded-lg bg-white/20">
+											<span className="text-4xl text-accent-primary">
+												<Icon />
+											</span>
+											<h3 className="mt-2 font-semibold text-background">
+												{name}
+											</h3>
+										</div>
+									))}
+								</div>
+							</div>
+						</div>
+					</motion.div>
+				</div>
 			</div>
 		</section>
 	);

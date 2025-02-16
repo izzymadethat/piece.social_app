@@ -5,10 +5,7 @@ const Housing = () => {
 		<div className="py-24 bg-white sm:py-32">
 			<div className="px-6 mx-auto max-w-7xl lg:px-8">
 				<div className="max-w-2xl mx-auto lg:text-center">
-					<h2 className="font-semibold text-accent-secondary text-xl/7">
-						Housing
-					</h2>
-					<p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 text-pretty sm:text-5xl lg:text-balance">
+					<p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 font-heading sm:text-5xl lg:text-balance">
 						Real Estate Solutions for Non-Profits
 					</p>
 					<p className="mt-6 text-lg/8 0">

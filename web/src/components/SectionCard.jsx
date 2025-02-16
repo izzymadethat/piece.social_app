@@ -1,6 +1,6 @@
 const SectionCard = ({ info }) => {
 	return (
-		<a href="#" className="relative block bg-black group">
+		<a href="#" className="relative block bg-black rounded-md group">
 			<img
 				alt=""
 				src={info?.imageUrl}
