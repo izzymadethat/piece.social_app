@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ourTeam } from "./about-details";
 const Team = () => {
 	return (
-		<section className="flex flex-col justify-center w-full min-h-screen p-20">
+		<section className="flex flex-col justify-center w-full bg-[#EEE3A9] p-20">
 			{/* Heading */}
 			<div>
 				<h2 className="text-4xl">Our Team</h2>

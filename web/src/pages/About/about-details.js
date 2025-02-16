@@ -98,14 +98,15 @@ export const waysToHelp = [
 	},
 	{
 		title: "Join the Nonprofit Network",
-		description: "How to Secure Housing Through Piece.Social",
+		description:
+			"Learn how we can help you fulfill your mission to provide housing to those in need",
 		icon: "🤝",
 		link: "/volunteer",
 	},
 	{
-		title: "Crowdfunding",
+		title: "Share This Mission",
 		description:
-			"Share our mission with your friends and family to help us reach more people.",
+			"Join our mission with your friends and family to help us reach more people.",
 		icon: "📢",
 		link: "/share",
 	},

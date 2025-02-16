@@ -25,19 +25,11 @@ const Header = () => {
 						<Button
 							as="span"
 							variant="outline"
-							className="bg-primary hover:bg-accent-secondary hover:text-white border-none duration-200 text-background z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center cursor-pointer"
+							className="px-10 py-3 font-semibold transition-all duration-300 transform border-none rounded-full shadow-lg cursor-pointer bg-accent-secondary text-accent-primary hover:scale-105 hover:shadow-xl hover:text-accent-primary"
 						>
 							Login
 						</Button>
 					</SignInButton>
-					<SignUpButton>
-						<Button
-							variant="outline"
-							className="hover:bg-accent-secondary duration-200 hover:text-background z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center border-none"
-						>
-							Create a Piece Account
-						</Button>
-					</SignUpButton>
 				</div>
 
 				{/* Mobile Nav */}
