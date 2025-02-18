@@ -3,7 +3,7 @@
 	"private": "true",
 	"workspaces": ["web", "blog"],
 	"scripts": {
-		"prepare": "husky",
+		"prepare": "if [ \"$NODE_ENV\" != \"production\" ]; then husky; fi",
 		"format": "biome format --write .",
 		"lint": "biome lint --write .",
 		"check": "biome check --write ."
